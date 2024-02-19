@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b2985148f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ticket-primary': 'rgb(3, 7, 18)',
+                        'ticket-font': 'rgb(29, 209, 0)',
+                        'tia': 'rgba(29, 209, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+    <title>Smart Ticketing</title>
+</head>
+
+<body>
+    <header>
+        <div class="max-w-[81.45%] m-auto navbar bg-base-100 pt-12">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="text-3xl font-extrabold" href="#">P-TICKET</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-ticket-primary text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a
+                    class="btn border-2 border-ticket-font bg-tia text-ticket-font hover:bg-transparent hover:border-ticket-font">Bus
+                    <img src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero mt-8 max-w-[81.45%] m-auto md:h-[550px] rounded-3xl"
+                style="background-image: url(images/banner.png);">
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-3xl">
+                        <h1 class="mb-5 text-[64px] font-bold text-white">End-to-End Travel with <br> <span
+                                class="text-ticket-font">P Paribahan</span></h1>
+                        <p class="mb-5 text-lg">Yes, you can run unit tests and view the results directly within the
+                            app. The <br> integrated testing features allow for a streamlined .</p>
+                        <button
+                            class="btn md:w-44 md:h-16 border-2 border-ticket-font bg-ticket-font text-ticket-primary text-xl hover:bg-transparent hover:text-ticket-font hover:border-ticket-font">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[81.45%] m-auto relative">
+                <div class="w-full md:absolute -top-16 gap-4 flex flex-col md:flex-row place-content-around">
+                    <div class="card card-side pl-4 bg-base-100 shadow-xl rounded-3xl border-b-4 border-ticket-font">
+                        <figure><img src="images/people.png" alt="people" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl inter">500K+</h2>
+                            <p>Registered users</p>
+                        </div>
+                    </div>
+                    <div class="card card-side pl-4 bg-base-100 shadow-xl rounded-3xl border-b-4 border-ticket-font">
+                        <figure><img src="images/ticket-cupon.png" alt="people" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl inter">1.7 lacks</h2>
+                            <p>Tickets sold</p>
+                        </div>
+                    </div>
+                    <div class="card card-side pl-4 bg-base-100 shadow-xl rounded-3xl border-b-4 border-ticket-font">
+                        <figure><img src="images/stoppage.png" alt="people" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl inter">80K+</h2>
+                            <p>Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-52">
+            <div class="max-w-[81.45%] m-auto text-center">
+                <h1 class="text-5xl mb-16 font-bold">Best offers for you</h1>
+                <div class="flex flex-col md:flex-row gap-4 place-content-between">
+                    <div class="card max-w-[573px] md:w-[573px] max-h-[220px] bg-yellow-400 flex flex-row">
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl font-extrabold">15% OFF</h2>
+                            <p class="text-lg font-extrabold">on your next purchase <br> <span class="text-base text-[#03071280] opacity-50">use by January 2024</span></p>
+                        </div>
+                        <div class="border-l border-dashed border-l-2 my-5 pt-5">
+                            <div class="absolute rounded-full w-12 h-12 bg-white -ml-6 -top-6"></div>
+                            <div class="absolute rounded-full w-12 h-12 bg-white -ml-6 -bottom-6"></div>
+                        </div>
+                        <div class="card-body pt-14 flex-1 ml-5">
+                            <h2 class="card-title text-3xl font-extrabold">NEW15 </h2>
+                            <p class="text-base font-bold text-[#03071280] opacity-50">Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="card max-w-[573px] md:w-[573px] max-h-[220px] bg-pink-400 flex flex-row">
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl font-extrabold">20% OFF</h2>
+                            <p class="text-lg font-extrabold">on your next purchase <br> <span class="text-base text-[#03071280] opacity-50">use by January 2024</span></p>
+                        </div>
+                        <div class="border-l border-dashed border-l-2 my-5 pt-5">
+                            <div class="absolute rounded-full w-12 h-12 bg-white -ml-6 -top-6"></div>
+                            <div class="absolute rounded-full w-12 h-12 bg-white -ml-6 -bottom-6"></div>
+                        </div>
+                        <div class="card-body pt-14 flex-1 ml-5">
+                            <h2 class="card-title text-3xl font-extrabold">Couple 20</h2>
+                            <p class="text-base font-bold text-[#03071280] opacity-40">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                            class="btn md:w-44 md:h-16 border-[3px] border-ticket-font bg-transparent text-ticket-font text-xl hover:text-white hover:bg-ticket-font  hover:border-ticket-font mt-16">See All Offers</button>
+            </div>
+        </section>
+
+        <section>
+            
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
