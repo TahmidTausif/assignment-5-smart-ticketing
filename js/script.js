@@ -59,8 +59,7 @@ for(const seat of allSeat){
             document.getElementById("modal-button").removeAttribute("disabled");
             
         }
-        const target = e.target
-        target.setAttribute("disabled", true);
+        e.target.setAttribute("disabled", true);
 
          
         
@@ -77,7 +76,6 @@ function grandTotal(){
     let grand = 0;
     const couponBox = document.getElementById('coupon-text')
     const discountText = document.getElementById('discount')
-    const wrongDiscount = document.getElementById('wrong-discount')
     
     const coupon = document.getElementById('coupon').value
 
@@ -99,8 +97,6 @@ function grandTotal(){
     }
     else{
         grand = total;
-        couponBox.classList.add('hidden');
-        wrongDiscount.classList.remove('hidden');
     }
 
     
