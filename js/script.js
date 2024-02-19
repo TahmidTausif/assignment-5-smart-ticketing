@@ -8,7 +8,7 @@ let avail = 40;
 for(const seat of allSeat){
     seat.addEventListener('click', function(e){
 
-        
+       
 
         if(count+1>4){
             alert('You can buy only 4 seats at a time.');
@@ -57,7 +57,12 @@ for(const seat of allSeat){
 
         if(count>0){
             document.getElementById("modal-button").removeAttribute("disabled");
+            
         }
+        const target = e.target
+        target.setAttribute("disabled", true);
+
+         
         
     })
 }
